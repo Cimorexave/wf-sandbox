@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            welcomeLabel = new Label();
+            docLink = new LinkLabel();
+            SuspendLayout();
+            // 
+            // welcomeLabel
+            // 
+            welcomeLabel.AutoSize = true;
+            welcomeLabel.Location = new Point(100, 51);
+            welcomeLabel.Name = "welcomeLabel";
+            welcomeLabel.Size = new Size(266, 15);
+            welcomeLabel.TabIndex = 0;
+            welcomeLabel.Text = "Welcome To PDF Explain (Monatsjournal version)";
+            // 
+            // docLink
+            // 
+            docLink.AutoSize = true;
+            docLink.Location = new Point(100, 79);
+            docLink.Name = "docLink";
+            docLink.Size = new Size(162, 15);
+            docLink.TabIndex = 1;
+            docLink.TabStop = true;
+            docLink.Text = "Visit our Documentation here";
+            docLink.LinkClicked += redirectToDocs;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(docLink);
+            Controls.Add(welcomeLabel);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label welcomeLabel;
+        private LinkLabel docLink;
     }
 }
