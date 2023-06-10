@@ -6,5 +6,10 @@ namespace wf_sandbox
         {
             InitializeComponent();
         }
+
+        private void redirectToDocs(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
