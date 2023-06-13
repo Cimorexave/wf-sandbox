@@ -29,22 +29,55 @@
         private void InitializeComponent()
         {
             userControl11 = new UserControl1();
+            button1 = new Button();
+            progressBar1 = new ProgressBar();
+            button2 = new Button();
             SuspendLayout();
             // 
             // userControl11
             // 
             userControl11.BackColor = SystemColors.ActiveCaption;
-            userControl11.Dock = DockStyle.Fill;
-            userControl11.Location = new Point(0, 0);
+            userControl11.Location = new Point(12, 451);
             userControl11.Name = "userControl11";
-            userControl11.Size = new Size(597, 500);
+            userControl11.Size = new Size(244, 37);
             userControl11.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(162, 23);
+            button1.TabIndex = 1;
+            button1.Text = "New Background Worker";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(221, 12);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(162, 23);
+            progressBar1.TabIndex = 2;
+            progressBar1.Visible = false;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(423, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(162, 23);
+            button2.TabIndex = 3;
+            button2.Text = "Run Blocking Task";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(597, 500);
+            Controls.Add(button2);
+            Controls.Add(progressBar1);
+            Controls.Add(button1);
             Controls.Add(userControl11);
             Name = "Form2";
             Text = "Form2";
@@ -54,5 +87,8 @@
         #endregion
 
         private UserControl1 userControl11;
+        private Button button1;
+        private ProgressBar progressBar1;
+        private Button button2;
     }
 }
