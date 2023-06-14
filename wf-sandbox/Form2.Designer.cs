@@ -57,6 +57,7 @@
             progressBar1.Location = new Point(221, 12);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(162, 23);
+            progressBar1.Step = 1;
             progressBar1.TabIndex = 2;
             progressBar1.Visible = false;
             // 
