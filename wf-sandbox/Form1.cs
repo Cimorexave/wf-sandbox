@@ -39,5 +39,10 @@ namespace wf_sandbox
         {
             _ = new Form2().ShowDialog();
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            new GridForm().Show();
+        }
     }
 }

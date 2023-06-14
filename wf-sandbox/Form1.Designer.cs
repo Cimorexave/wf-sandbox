@@ -48,6 +48,7 @@
             comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             comboBox1 = new ComboBox();
             lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)popupMenu1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)comboBoxEdit1.Properties).BeginInit();
@@ -203,15 +204,25 @@
             lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
             lookUpEdit1.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] { new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name1", "Name1"), new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name2", "Name2") });
             lookUpEdit1.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
-            lookUpEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             lookUpEdit1.Size = new Size(100, 20);
             lookUpEdit1.TabIndex = 19;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(677, 415);
+            button3.Name = "button3";
+            button3.Size = new Size(111, 23);
+            button3.TabIndex = 24;
+            button3.Text = "Open Grid Form";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += Button3_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
             Controls.Add(lookUpEdit1);
             Controls.Add(comboBox1);
             Controls.Add(comboBoxEdit1);
@@ -255,5 +266,6 @@
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private ComboBox comboBox1;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+        private Button button3;
     }
 }
