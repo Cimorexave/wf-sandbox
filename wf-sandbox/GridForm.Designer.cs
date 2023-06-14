@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
+            textBox5 = new TextBox();
             textBox1 = new TextBox();
             label1 = new Label();
-            comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             label2 = new Label();
             label3 = new Label();
-            label4 = new Label();
             label5 = new Label();
+            label4 = new Label();
             label6 = new Label();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             folderBrowserDialog1 = new FolderBrowserDialog();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)comboBoxEdit1.Properties).BeginInit();
@@ -78,6 +78,13 @@
             tableLayoutPanel1.Size = new Size(417, 395);
             tableLayoutPanel1.TabIndex = 0;
             // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(116, 97);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(297, 23);
+            textBox5.TabIndex = 10;
+            // 
             // textBox1
             // 
             textBox1.Location = new Point(116, 4);
@@ -94,14 +101,6 @@
             label1.Size = new Size(105, 29);
             label1.TabIndex = 0;
             label1.Text = "Name";
-            // 
-            // comboBoxEdit1
-            // 
-            comboBoxEdit1.Location = new Point(12, 12);
-            comboBoxEdit1.Name = "comboBoxEdit1";
-            comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            comboBoxEdit1.Size = new Size(413, 20);
-            comboBoxEdit1.TabIndex = 1;
             // 
             // label2
             // 
@@ -123,16 +122,6 @@
             label3.TabIndex = 3;
             label3.Text = "Letzte Veranterung";
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Dock = DockStyle.Fill;
-            label4.Location = new Point(4, 73);
-            label4.Name = "label4";
-            label4.Size = new Size(105, 20);
-            label4.TabIndex = 4;
-            label4.Text = "Status";
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -142,6 +131,16 @@
             label5.Size = new Size(105, 20);
             label5.TabIndex = 5;
             label5.Text = "Kommentar";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Dock = DockStyle.Fill;
+            label4.Location = new Point(4, 73);
+            label4.Name = "label4";
+            label4.Size = new Size(105, 20);
+            label4.TabIndex = 4;
+            label4.Text = "Status";
             // 
             // label6
             // 
@@ -174,12 +173,13 @@
             textBox4.Size = new Size(297, 23);
             textBox4.TabIndex = 9;
             // 
-            // textBox5
+            // comboBoxEdit1
             // 
-            textBox5.Location = new Point(116, 97);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(297, 23);
-            textBox5.TabIndex = 10;
+            comboBoxEdit1.Location = new Point(12, 12);
+            comboBoxEdit1.Name = "comboBoxEdit1";
+            comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            comboBoxEdit1.Size = new Size(413, 20);
+            comboBoxEdit1.TabIndex = 1;
             // 
             // GridForm
             // 
