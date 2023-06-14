@@ -37,16 +37,18 @@
             barCheckItem2 = new DevExpress.XtraBars.BarCheckItem();
             barCheckItem3 = new DevExpress.XtraBars.BarCheckItem();
             popupMenu1 = new DevExpress.XtraBars.PopupMenu(components);
+            barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
+            barCheckItem4 = new DevExpress.XtraBars.BarCheckItem();
+            barCheckItem5 = new DevExpress.XtraBars.BarCheckItem();
             barManager1 = new DevExpress.XtraBars.BarManager(components);
             barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
-            barCheckItem4 = new DevExpress.XtraBars.BarCheckItem();
-            barCheckItem5 = new DevExpress.XtraBars.BarCheckItem();
+            comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)popupMenu1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)comboBoxEdit1.Properties).BeginInit();
             SuspendLayout();
             // 
             // welcomeLabel
@@ -91,7 +93,7 @@
             // 
             // dropDownButton1
             // 
-            dropDownButton1.Location = new Point(231, 122);
+            dropDownButton1.Location = new Point(194, 122);
             dropDownButton1.Name = "dropDownButton1";
             dropDownButton1.Size = new Size(135, 23);
             dropDownButton1.TabIndex = 4;
@@ -110,6 +112,24 @@
             popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(barCheckItem1), new DevExpress.XtraBars.LinkPersistInfo(barCheckItem4), new DevExpress.XtraBars.LinkPersistInfo(barCheckItem5) });
             popupMenu1.Manager = barManager1;
             popupMenu1.Name = "popupMenu1";
+            // 
+            // barCheckItem1
+            // 
+            barCheckItem1.Caption = "barCheckItem1";
+            barCheckItem1.Id = 0;
+            barCheckItem1.Name = "barCheckItem1";
+            // 
+            // barCheckItem4
+            // 
+            barCheckItem4.Caption = "barCheckItem4";
+            barCheckItem4.Id = 1;
+            barCheckItem4.Name = "barCheckItem4";
+            // 
+            // barCheckItem5
+            // 
+            barCheckItem5.Caption = "barCheckItem5";
+            barCheckItem5.Id = 2;
+            barCheckItem5.Name = "barCheckItem5";
             // 
             // barManager1
             // 
@@ -153,29 +173,22 @@
             barDockControlRight.Manager = barManager1;
             barDockControlRight.Size = new Size(0, 450);
             // 
-            // barCheckItem1
+            // comboBoxEdit1
             // 
-            barCheckItem1.Caption = "barCheckItem1";
-            barCheckItem1.Id = 0;
-            barCheckItem1.Name = "barCheckItem1";
-            // 
-            // barCheckItem4
-            // 
-            barCheckItem4.Caption = "barCheckItem4";
-            barCheckItem4.Id = 1;
-            barCheckItem4.Name = "barCheckItem4";
-            // 
-            // barCheckItem5
-            // 
-            barCheckItem5.Caption = "barCheckItem5";
-            barCheckItem5.Id = 2;
-            barCheckItem5.Name = "barCheckItem5";
+            comboBoxEdit1.Location = new Point(335, 124);
+            comboBoxEdit1.MenuManager = barManager1;
+            comboBoxEdit1.Name = "comboBoxEdit1";
+            comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            comboBoxEdit1.Properties.Items.AddRange(new object[] { "AKU - Monatsjournal", "New Template", "Untitled Template1" });
+            comboBoxEdit1.Size = new Size(122, 20);
+            comboBoxEdit1.TabIndex = 9;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(comboBoxEdit1);
             Controls.Add(dropDownButton1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -189,6 +202,7 @@
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)popupMenu1).EndInit();
             ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)comboBoxEdit1.Properties).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -211,5 +225,6 @@
         private DevExpress.XtraBars.BarCheckItem barCheckItem1;
         private DevExpress.XtraBars.BarCheckItem barCheckItem4;
         private DevExpress.XtraBars.BarCheckItem barCheckItem5;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
     }
 }
