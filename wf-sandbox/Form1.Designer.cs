@@ -28,10 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             welcomeLabel = new Label();
             docLink = new LinkLabel();
             button1 = new Button();
             button2 = new Button();
+            dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
+            barCheckItem2 = new DevExpress.XtraBars.BarCheckItem();
+            barCheckItem3 = new DevExpress.XtraBars.BarCheckItem();
+            popupMenu1 = new DevExpress.XtraBars.PopupMenu(components);
+            barManager1 = new DevExpress.XtraBars.BarManager(components);
+            barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
+            barCheckItem4 = new DevExpress.XtraBars.BarCheckItem();
+            barCheckItem5 = new DevExpress.XtraBars.BarCheckItem();
+            ((System.ComponentModel.ISupportInitialize)popupMenu1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
             SuspendLayout();
             // 
             // welcomeLabel
@@ -74,17 +89,106 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // dropDownButton1
+            // 
+            dropDownButton1.Location = new Point(231, 122);
+            dropDownButton1.Name = "dropDownButton1";
+            dropDownButton1.Size = new Size(135, 23);
+            dropDownButton1.TabIndex = 4;
+            dropDownButton1.Text = "Profile";
+            // 
+            // barCheckItem2
+            // 
+            barCheckItem2.Name = "barCheckItem2";
+            // 
+            // barCheckItem3
+            // 
+            barCheckItem3.Name = "barCheckItem3";
+            // 
+            // popupMenu1
+            // 
+            popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(barCheckItem1), new DevExpress.XtraBars.LinkPersistInfo(barCheckItem4), new DevExpress.XtraBars.LinkPersistInfo(barCheckItem5) });
+            popupMenu1.Manager = barManager1;
+            popupMenu1.Name = "popupMenu1";
+            // 
+            // barManager1
+            // 
+            barManager1.DockControls.Add(barDockControlTop);
+            barManager1.DockControls.Add(barDockControlBottom);
+            barManager1.DockControls.Add(barDockControlLeft);
+            barManager1.DockControls.Add(barDockControlRight);
+            barManager1.Form = this;
+            barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] { barCheckItem1, barCheckItem4, barCheckItem5 });
+            barManager1.MaxItemId = 3;
+            // 
+            // barDockControlTop
+            // 
+            barDockControlTop.CausesValidation = false;
+            barDockControlTop.Dock = DockStyle.Top;
+            barDockControlTop.Location = new Point(0, 0);
+            barDockControlTop.Manager = barManager1;
+            barDockControlTop.Size = new Size(800, 0);
+            // 
+            // barDockControlBottom
+            // 
+            barDockControlBottom.CausesValidation = false;
+            barDockControlBottom.Dock = DockStyle.Bottom;
+            barDockControlBottom.Location = new Point(0, 450);
+            barDockControlBottom.Manager = barManager1;
+            barDockControlBottom.Size = new Size(800, 0);
+            // 
+            // barDockControlLeft
+            // 
+            barDockControlLeft.CausesValidation = false;
+            barDockControlLeft.Dock = DockStyle.Left;
+            barDockControlLeft.Location = new Point(0, 0);
+            barDockControlLeft.Manager = barManager1;
+            barDockControlLeft.Size = new Size(0, 450);
+            // 
+            // barDockControlRight
+            // 
+            barDockControlRight.CausesValidation = false;
+            barDockControlRight.Dock = DockStyle.Right;
+            barDockControlRight.Location = new Point(800, 0);
+            barDockControlRight.Manager = barManager1;
+            barDockControlRight.Size = new Size(0, 450);
+            // 
+            // barCheckItem1
+            // 
+            barCheckItem1.Caption = "barCheckItem1";
+            barCheckItem1.Id = 0;
+            barCheckItem1.Name = "barCheckItem1";
+            // 
+            // barCheckItem4
+            // 
+            barCheckItem4.Caption = "barCheckItem4";
+            barCheckItem4.Id = 1;
+            barCheckItem4.Name = "barCheckItem4";
+            // 
+            // barCheckItem5
+            // 
+            barCheckItem5.Caption = "barCheckItem5";
+            barCheckItem5.Id = 2;
+            barCheckItem5.Name = "barCheckItem5";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dropDownButton1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(docLink);
             Controls.Add(welcomeLabel);
+            Controls.Add(barDockControlLeft);
+            Controls.Add(barDockControlRight);
+            Controls.Add(barDockControlBottom);
+            Controls.Add(barDockControlTop);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)popupMenu1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -95,5 +199,17 @@
         private LinkLabel docLink;
         private Button button1;
         private Button button2;
+        private DevExpress.XtraEditors.DropDownButton dropDownButton1;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem2;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem3;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private DevExpress.XtraBars.BarManager barManager1;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem1;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem4;
+        private DevExpress.XtraBars.BarCheckItem barCheckItem5;
     }
 }

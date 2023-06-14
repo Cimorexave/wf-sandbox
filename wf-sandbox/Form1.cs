@@ -5,6 +5,7 @@ namespace wf_sandbox
         public Form1()
         {
             InitializeComponent();
+            dropDownButton1.DropDownControl = popupMenu1;
         }
 
         private void redirectToDocs(object sender, LinkLabelLinkClickedEventArgs e)
