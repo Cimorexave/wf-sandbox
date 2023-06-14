@@ -6,8 +6,17 @@ namespace wf_sandbox
         {
             InitializeComponent();
             dropDownButton1.DropDownControl = popupMenu1;
+            FillLookUpEdit();
         }
 
+        private void FillLookUpEdit()
+        {
+            // Create a list of items
+            List<string> items = new List<string> { "Item 1", "Item 2", "Item 3", "Item 4" };
+
+            // Assign the list as the data source of the LookUpEdit
+            lookUpEdit1.Properties.DataSource = items;
+        }
         private void redirectToDocs(object sender, LinkLabelLinkClickedEventArgs e)
         {
 

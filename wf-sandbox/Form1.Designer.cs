@@ -46,9 +46,12 @@
             barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            comboBox1 = new ComboBox();
+            lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)popupMenu1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)comboBoxEdit1.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)lookUpEdit1.Properties).BeginInit();
             SuspendLayout();
             // 
             // welcomeLabel
@@ -183,11 +186,34 @@
             comboBoxEdit1.Size = new Size(122, 20);
             comboBoxEdit1.TabIndex = 9;
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "AKU - Monatsjournal", "Untitled Template 1", "Untitle Template 2", "New Template" });
+            comboBox1.Location = new Point(476, 122);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 14;
+            // 
+            // lookUpEdit1
+            // 
+            lookUpEdit1.Location = new Point(624, 123);
+            lookUpEdit1.MenuManager = barManager1;
+            lookUpEdit1.Name = "lookUpEdit1";
+            lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
+            lookUpEdit1.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] { new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name1", "Name1"), new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name2", "Name2") });
+            lookUpEdit1.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
+            lookUpEdit1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            lookUpEdit1.Size = new Size(100, 20);
+            lookUpEdit1.TabIndex = 19;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lookUpEdit1);
+            Controls.Add(comboBox1);
             Controls.Add(comboBoxEdit1);
             Controls.Add(dropDownButton1);
             Controls.Add(button2);
@@ -203,6 +229,7 @@
             ((System.ComponentModel.ISupportInitialize)popupMenu1).EndInit();
             ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
             ((System.ComponentModel.ISupportInitialize)comboBoxEdit1.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)lookUpEdit1.Properties).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -226,5 +253,7 @@
         private DevExpress.XtraBars.BarCheckItem barCheckItem4;
         private DevExpress.XtraBars.BarCheckItem barCheckItem5;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+        private ComboBox comboBox1;
+        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
     }
 }
