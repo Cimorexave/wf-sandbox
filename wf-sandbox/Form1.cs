@@ -44,5 +44,9 @@ namespace wf_sandbox
         {
             new GridForm().Show();
         }
+
+        private void StartProgressButtonClick(object sender, EventArgs e)
+        {
+        }
     }
 }

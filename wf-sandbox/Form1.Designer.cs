@@ -49,10 +49,16 @@
             comboBox1 = new ComboBox();
             lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
             button3 = new Button();
+            stepProgressBar1 = new DevExpress.XtraEditors.StepProgressBar();
+            stepProgressBarItem1 = new DevExpress.XtraEditors.StepProgressBarItem();
+            stepProgressBarItem2 = new DevExpress.XtraEditors.StepProgressBarItem();
+            button4 = new Button();
+            progressBar1 = new ProgressBar();
             ((System.ComponentModel.ISupportInitialize)popupMenu1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)barManager1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)comboBoxEdit1.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)lookUpEdit1.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)stepProgressBar1).BeginInit();
             SuspendLayout();
             // 
             // welcomeLabel
@@ -217,11 +223,54 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += Button3_Click;
             // 
+            // stepProgressBar1
+            // 
+            stepProgressBar1.Items.Add(stepProgressBarItem1);
+            stepProgressBar1.Items.Add(stepProgressBarItem2);
+            stepProgressBar1.Location = new Point(25, 394);
+            stepProgressBar1.Name = "stepProgressBar1";
+            stepProgressBar1.Size = new Size(126, 44);
+            stepProgressBar1.TabIndex = 29;
+            // 
+            // stepProgressBarItem1
+            // 
+            stepProgressBarItem1.ContentBlock2.Caption = "step 1";
+            stepProgressBarItem1.Name = "stepProgressBarItem1";
+            stepProgressBarItem1.Progress = 33;
+            // 
+            // stepProgressBarItem2
+            // 
+            stepProgressBarItem2.ContentBlock2.Caption = "Item2";
+            stepProgressBarItem2.Name = "stepProgressBarItem2";
+            // 
+            // button4
+            // 
+            button4.Location = new Point(321, 415);
+            button4.Name = "button4";
+            button4.Size = new Size(111, 23);
+            button4.TabIndex = 34;
+            button4.Text = "Start Progress";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += StartProgressButtonClick;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(170, 415);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(145, 23);
+            progressBar1.Style = ProgressBarStyle.Continuous;
+            progressBar1.TabIndex = 39;
+            progressBar1.UseWaitCursor = true;
+            progressBar1.Value = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(progressBar1);
+            Controls.Add(button4);
+            Controls.Add(stepProgressBar1);
             Controls.Add(button3);
             Controls.Add(lookUpEdit1);
             Controls.Add(comboBox1);
@@ -241,6 +290,7 @@
             ((System.ComponentModel.ISupportInitialize)barManager1).EndInit();
             ((System.ComponentModel.ISupportInitialize)comboBoxEdit1.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)lookUpEdit1.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)stepProgressBar1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -267,5 +317,10 @@
         private ComboBox comboBox1;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
         private Button button3;
+        private DevExpress.XtraEditors.StepProgressBar stepProgressBar1;
+        private DevExpress.XtraEditors.StepProgressBarItem stepProgressBarItem1;
+        private DevExpress.XtraEditors.StepProgressBarItem stepProgressBarItem2;
+        private Button button4;
+        private ProgressBar progressBar1;
     }
 }
